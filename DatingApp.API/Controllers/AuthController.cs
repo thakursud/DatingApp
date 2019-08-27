@@ -56,7 +56,7 @@ namespace DatingApp.API.Controllers
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
 
-            userForLoginDto.Username = userForLoginDto.Username.ToLowerInvariant();
+           // userForLoginDto.Username = userForLoginDto.Username.ToLowerInvariant();
 
             // if(!await _repo.UserExists(userForLoginDto.Username)){
             //     return BadRequest($"Username : {userForLoginDto.Username} not exists. Please provide valid username or register the new user.");
