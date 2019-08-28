@@ -55,7 +55,7 @@ namespace DatingApp.API.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
-
+            throw new Exception("Exeception at login");
            // userForLoginDto.Username = userForLoginDto.Username.ToLowerInvariant();
 
             // if(!await _repo.UserExists(userForLoginDto.Username)){
